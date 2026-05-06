@@ -23,7 +23,6 @@ a{color:var(--pd);text-decoration:none}
 aside{background:var(--card);border-right:1px solid var(--line);padding:2rem 1.3rem;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
 .sb-top{flex:1}
 .brand{display:flex;flex-direction:column;align-items:flex-start;margin-bottom:0.2rem}
-.brand-logo{width:110px;height:auto;margin-bottom:0.75rem;display:block}
 .brand .name{font-size:1.05rem;font-weight:800;color:var(--ink)}
 .brand .pos{font-size:0.66rem;color:#0056B3;font-weight:700;background:rgba(0,115,233,0.12);padding:0.18rem 0.45rem;border-radius:5px;display:inline-block;margin-top:0.3rem;border:1px solid rgba(0,115,233,0.3)}
 .brand .sub-role{font-size:0.7rem;color:var(--sub);margin-top:0.22rem;line-height:1.45}
@@ -210,7 +209,19 @@ section.active{display:block}
 <aside>
     <div class="sb-top">
         <div class="brand">
-            <img src="https://www.coupang.jobs/images/logo.svg" alt="Coupang" class="brand-logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:0.6rem">
+                <rect width="40" height="40" rx="10" fill="#E23008"/>
+                <!-- 배달 박스 몸통 -->
+                <rect x="9" y="18" width="22" height="14" rx="2" fill="white"/>
+                <!-- 박스 뚜껑 -->
+                <path d="M7 16 L20 11 L33 16 L33 18 L7 18 Z" fill="white" opacity="0.9"/>
+                <!-- 박스 중앙 선 -->
+                <line x1="20" y1="18" x2="20" y2="32" stroke="#E23008" stroke-width="1.5"/>
+                <!-- 박스 리본 -->
+                <rect x="17" y="11" width="6" height="7" rx="1" fill="#E23008" opacity="0.25"/>
+                <!-- 체크 표시 (CX 완료 의미) -->
+                <path d="M14 25 L18 29 L27 22" stroke="#E23008" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
             <div class="name">김도연 · Doyeon Kim</div>
             <div class="pos">CX 운영 및 개선 담당자</div>
             <div class="sub-role">고객 여정 개선 · VOC 운영<br>프로세스 기획</div>
